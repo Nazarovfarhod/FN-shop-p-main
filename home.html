@@ -1,0 +1,258 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Home</title>
+    <link rel="stylesheet" href="./src/output.css" />
+    <link rel="stylesheet" href="./style.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
+      integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+  </head>
+  <body class="py-5 bg-slate-300 min-h-lvh">
+    <!-- NAVBAR -->
+    <div
+      class="w-full h-14 rounded-md bg-slate-100 flex justify-between items-center px-1 sticky top-0 z-10 mb-10"
+    >
+      <a class="cursor-pointer ml-20" href="./home.html">
+        <span class="text-2xl text-info font-serif">FN</span>
+        <span class="text-zinc-700">.Store</span>
+      </a>
+
+      <div class="flex gap-16">
+        <a
+          class="cursor-pointer hover:text-info active:opacity-50"
+          href="./home.html"
+          >Home</a
+        >
+        <a
+          class="cursor-pointer hover:text-info active:opacity-50"
+          href="./index.html"
+          >All Products</a
+        >
+        <a
+          class="cursor-pointer hover:text-info active:opacity-50"
+          href="./home.html"
+          >Contact</a
+        >
+      </div>
+
+      <div class="flex items-center gap-10">
+        <div id="box" class="mr-7">
+          <i class="fa-solid fa-cart-shopping relative">
+            <span id="cart-number" class="absolute text-[10px] -right-3"
+              >0</span
+            >
+          </i>
+        </div>
+        <div class="mr-7">
+          <i class="fa-regular fa-heart relative">
+            <span id="heart-number" class="absolute text-[12px] -right-3"
+              >0</span
+            >
+          </i>
+        </div>
+        <form class="flex gap-2 items-center">
+          <label class="input input-bordered flex items-center gap-2">
+            <input
+              type="text"
+              name="input"
+              class="grow"
+              placeholder="Search"
+              autocomplete="off"
+            />
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              viewBox="0 0 16 16"
+              fill="currentColor"
+              class="w-4 h-4 opacity-70"
+            >
+              <path
+                fill-rule="evenodd"
+                d="M9.965 11.026a5 5 0 1 1 1.06-1.06l2.755 2.754a.75.75 0 1 1-1.06 1.06l-2.755-2.754ZM10.5 7a3.5 3.5 0 1 1-7 0 3.5 3.5 0 0 1 7 0Z"
+                clip-rule="evenodd"
+              />
+            </svg>
+          </label>
+          <button class="btn btn-info">Search</button>
+        </form>
+      </div>
+    </div>
+
+    <div class="container ml-auto mr-auto flex justify-center h-[450px] mb-20">
+      <div class="carousel w-[90%] rounded-2xl">
+        <div id="slide1" class="carousel-item relative w-full">
+          <img src="./images/product-hunting.webp" class="w-full" />
+          <div
+            class="absolute flex justify-between transform -translate-y-1/2 left-5 right-5 top-1/2"
+          >
+            <a href="#slide4" class="btn btn-circle">❮</a>
+            <a href="#slide2" class="btn btn-circle">❯</a>
+          </div>
+        </div>
+        <div id="slide2" class="carousel-item relative w-full">
+          <img src="./images/phones.jpg" class="w-full" />
+          <div
+            class="absolute flex justify-between transform -translate-y-1/2 left-5 right-5 top-1/2"
+          >
+            <a href="#slide1" class="btn btn-circle">❮</a>
+            <a href="#slide3" class="btn btn-circle">❯</a>
+          </div>
+        </div>
+        <div id="slide3" class="carousel-item relative w-full">
+          <img src="./images/coke.png" class="w-full" />
+          <div
+            class="absolute flex justify-between transform -translate-y-1/2 left-5 right-5 top-1/2"
+          >
+            <a href="#slide2" class="btn btn-circle">❮</a>
+            <a href="#slide4" class="btn btn-circle">❯</a>
+          </div>
+        </div>
+        <div id="slide4" class="carousel-item relative w-full">
+          <img
+            src="./images/wk21_hero_filled_p6-summer-cross-cat_b1_bil.avif"
+            class="w-full"
+          />
+          <div
+            class="absolute flex justify-between transform -translate-y-1/2 left-5 right-5 top-1/2"
+          >
+            <a href="#slide3" class="btn btn-circle">❮</a>
+            <a href="#slide1" class="btn btn-circle">❯</a>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <section>
+      <ul id="most-popular">
+        <template id="most-popular-template">
+          <li>
+            <div class="card w-96 bg-base-100 shadow-xl">
+              <figure><img src="" alt="Shoes" /></figure>
+              <div class="card-body">
+                <h2 class="card-title">
+                  Shoes!
+                  <div class="badge badge-secondary card-discount">NEW</div>
+                </h2>
+                <p class="card-old-price">Price:</p>
+                <p class="card-price">Price:</p>
+                <p class="card-rating">4.</p>
+                <div class="card-actions justify-end">
+                  <div class="badge badge-outline">Add to cart</div>
+                  <div class="badge badge-outline">Shop now</div>
+                </div>
+              </div>
+            </div>
+          </li>
+        </template>
+      </ul>
+    </section>
+    <section>
+      <ul id="discount">
+        <template id="discount-template">
+          <li>
+            <div class="card w-96 bg-base-100 shadow-xl">
+              <figure><img src="" alt="Shoes" /></figure>
+              <div class="card-body">
+                <h2 class="card-title">
+                  Shoes!
+                  <div class="badge badge-secondary card-discount">NEW</div>
+                </h2>
+                <p class="card-old-price">Price:</p>
+                <p class="card-price">Price:</p>
+                <p class="card-rating">4.</p>
+                <div class="card-actions justify-end">
+                  <div class="badge badge-outline">Add to cart</div>
+                  <div class="badge badge-outline">Shop now</div>
+                </div>
+              </div>
+            </div>
+          </li>
+        </template>
+      </ul>
+    </section>
+
+    <section id="footer" class="footerColor py-20 px-44">
+      <div class="flex justify-between items-center mb-20">
+        <a class="cursor-pointer ml-20" href="./home.html">
+          <span class="text-4xl text-info font-serif">FN</span>
+          <span class="text-black text-2xl">.Store</span>
+        </a>
+
+        <label class="input input-bordered flex items-center gap-2">
+          <input type="text" class="grow" placeholder="Search" />
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            viewBox="0 0 16 16"
+            fill="currentColor"
+            class="w-4 h-4 opacity-70"
+          >
+            <path
+              fill-rule="evenodd"
+              d="M9.965 11.026a5 5 0 1 1 1.06-1.06l2.755 2.754a.75.75 0 1 1-1.06 1.06l-2.755-2.754ZM10.5 7a3.5 3.5 0 1 1-7 0 3.5 3.5 0 0 1 7 0Z"
+              clip-rule="evenodd"
+            />
+          </svg>
+        </label>
+      </div>
+      <div class="flex justify-between">
+        <div>
+          <h3 class="text-2xl text-white font-medium mb-8">Company</h3>
+          <ul class="flex flex-col gap-4 text-white text-base">
+            <li><a href="./home.html">Home</a></li>
+            <li><a href="./index.html">All Products</a></li>
+            <li>About us</li>
+          </ul>
+        </div>
+
+        <div>
+          <h3 class="text-2xl text-white font-medium mb-8">Help</h3>
+          <ul class="flex flex-col gap-4 text-white text-base">
+            <li>FAQ</li>
+            <li>Help</li>
+            <li>Terms</li>
+          </ul>
+        </div>
+
+        <div>
+          <h3 class="text-2xl text-white font-medium mb-8">Social Media</h3>
+          <ul class="flex flex-col gap-4 text-white text-base">
+            <li class="flex items-center gap-3">
+              <i class="fa-brands fa-facebook"></i>Facebook
+            </li>
+            <li class="flex items-center gap-3">
+              <i class="fa-brands fa-tiktok"></i>Tiktok
+            </li>
+            <li class="flex items-center gap-3">
+              <i class="fa-brands fa-instagram"></i>Instagram
+            </li>
+          </ul>
+        </div>
+
+        <div>
+          <h3 class="text-2xl text-white font-medium mb-8">Contact</h3>
+          <ul class="flex flex-col gap-4 text-white text-base">
+            <li>Sukaasih, Kota Tangerang, Banten 15111</li>
+            <li>Phone : +99891 671-67-66</li>
+            <li>Mail : adminvantela@domain.com</li>
+          </ul>
+        </div>
+      </div>
+    </section>
+
+    <!-- overlay -->
+    <div
+      id="overlay"
+      class="absolute flex justify-center items-center top-0 left-0 blur-0 w-full bg-black bg-opacity-50 h-lvh backdrop-blur-sm"
+    >
+      <span class="loading loading-spinner loading-lg text-white"></span>
+    </div>
+    <script src="./request.js"></script>
+    <script src="./home.js"></script>
+  </body>
+</html>
