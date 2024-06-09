@@ -1,9 +1,11 @@
-const discount = document.getElementById("discount");
-const mostPopular = document.getElementById("most-popular");
+import { getData } from "./request.js";
+
+const discount = document.getElementById("discount-template");
+const popular = document.getElementById("most-popular-template");
 
 const updateUI = (products) => {
   const clonediscount = discount.content.cloneNode(true);
-  const clonepopular = mostPopular.content.cloneNode(true);
+  const clonepopular = popular.content.cloneNode(true);
 
   // Most popular
 
@@ -12,3 +14,5 @@ const updateUI = (products) => {
   });
   console.log(mostPopular);
 };
+
+updateUI();
