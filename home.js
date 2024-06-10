@@ -1,4 +1,4 @@
-const API = "https://dummyjson.com/products?limit=60";
+const API = "https://dummyjson.com/products?limit=194";
 
 const getData = async (url) => {
   const overlay = document.getElementById("overlay");
@@ -20,7 +20,6 @@ const updateUI = (products) => {
     .sort((a, b) => b.rating - a.rating)
     .slice(0, 6)
     .forEach((element) => {
-      console.log(element);
       const clonePopular = popularTemplate.content.cloneNode(true);
       const title = clonePopular.querySelector(".card-popular-title");
       title.textContent = element.title;
@@ -49,6 +48,40 @@ const updateUI = (products) => {
 
       mostPopular.appendChild(clonePopular);
     });
+
+  // On Sale
+  products
+  .sort((a, b) => b.discountPercentage - a.discountPercentage)
+  .slice(0, 6)
+  .forEach((element) => {
+    const clonePopular = popularTemplate.content.cloneNode(true);
+    const title = clonePopular.querySelector(".card-popular-title");
+    title.textContent = element.title;
+    const img = clonePopular.querySelector(".popular-img");
+    img.src = element.thumbnail;
+    const oldPrice = clonePopular.querySelector(".card-popular-old-price");
+    oldPrice.textContent = "Old Price: " + element.price + "$";
+
+    const newPrice = clonePopular.querySelector(".card-popular-price");
+    newPrice.textContent =
+      "New Price: " +
+      (
+        element.price -
+        (element.price * element.discountPercentage) / 100
+      ).toFixed(2) +
+      "$";
+    const rating = clonePopular.querySelector(".card-popular-rating");
+    rating.textContent = element.rating + "/5";
+
+    const sale = clonePopular.querySelector("#sale");
+
+    sale.textContent = element.discountPercentage + "%";
+
+    const read = clonePopular.querySelector(".read");
+    read.href = `./about.html?product=${element.id}`;
+
+    discount.appendChild(clonePopular);
+  });
 
   // Discounted products
 };

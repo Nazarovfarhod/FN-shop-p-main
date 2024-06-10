@@ -1,4 +1,4 @@
-const API = "https://dummyjson.com/products?limit=60";
+const API = "https://dummyjson.com/products?limit=194";
 
 const getData = async (url) => {
   const overlay = document.getElementById("overlay");
