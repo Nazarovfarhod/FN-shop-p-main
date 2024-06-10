@@ -127,8 +127,7 @@
         </div>
       </div>
     </div>
-
-    <section>
+    <section class="container ml-auto mr-auto">
       <ul id="most-popular">
         <template id="most-popular-template">
           <li>
@@ -152,7 +151,7 @@
         </template>
       </ul>
     </section>
-    <section>
+    <section class="container ml-auto mr-auto">
       <ul id="discount">
         <template id="discount-template">
           <li>
@@ -177,8 +176,14 @@
       </ul>
     </section>
 
+    <div class="flex ml-auto mr-auto justify-center mb-20">
+      <img src="./images/junior.png" alt="" />
+    </div>
+
     <section id="footer" class="footerColor py-20 px-44">
-      <div class="flex justify-between items-center mb-20">
+      <div
+        class="flex justify-between container ml-auto mr-auto items-center mb-20"
+      >
         <a class="cursor-pointer ml-20" href="./home.html">
           <span class="text-4xl text-info font-serif">FN</span>
           <span class="text-black text-2xl">.Store</span>
@@ -200,7 +205,7 @@
           </svg>
         </label>
       </div>
-      <div class="flex justify-between">
+      <div class="flex justify-between container ml-auto mr-auto">
         <div>
           <h3 class="text-2xl text-white font-medium mb-8">Company</h3>
           <ul class="flex flex-col gap-4 text-white text-base">
@@ -252,8 +257,7 @@
     >
       <span class="loading loading-spinner loading-lg text-white"></span>
     </div>
-   
-     <script type="module" src="./home.js"></script>
-
+    <script src="./request.js"></script>
+    <script type="module" src="./home.js"></script>
   </body>
 </html>

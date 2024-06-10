@@ -1,4 +1,3 @@
-import { getData } from "./request.js";
 
 const discount = document.getElementById("discount-template");
 const popular = document.getElementById("most-popular-template");

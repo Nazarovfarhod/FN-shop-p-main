@@ -1,3 +1,5 @@
+
+
 const temp = document.querySelector("template");
 const ul = document.querySelector("ul");
 const form = document.querySelector("form");
@@ -42,7 +44,7 @@ const updateUI = (products) => {
 
     img.src = product.thumbnail;
 
-    starRating.textContent = product.rating + "/5"
+    starRating.textContent = product.rating + "/5";
 
     h3.textContent = product.title;
     para.textContent = "Old price : " + product.price + " $";

@@ -2097,6 +2097,10 @@ html {
   height: 450px;
 }
 
+.h-\[90\%\] {
+  height: 90%;
+}
+
 .min-h-screen {
   min-height: 100vh;
 }
