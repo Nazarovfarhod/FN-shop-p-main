@@ -20,7 +20,7 @@
       class="w-full h-14 rounded-md bg-slate-100 flex justify-between items-center px-1 sticky top-0 z-10"
     >
       <a class="cursor-pointer ml-20" href="./home.html">
-        <span class="text-2xl text-info font-serif">FN</span>
+        <span class="text-4xl font-bold text-info font-serif">FN</span>
         <span class="text-zinc-700">.Store</span>
       </a>
 
@@ -88,12 +88,14 @@
       <h1 class="text-center text-6xl font-semibold text-green-700 mb-24">
         All Products
       </h1>
-      <ul class="w-full container ml-auto mr-auto flex flex-wrap justify-center gap-10">
+      <ul
+        class="w-full container ml-auto mr-auto flex flex-wrap justify-center gap-10"
+      >
         <template>
           <li class="w-[400px]">
-            <div class="card w-96 glass cursor-pointer">
+            <div class="card w-96 p-0 glass cursor-pointer">
               <figure><img id="cards" src="" alt="car!" /></figure>
-              <div class="card-body">
+              <div class="card-body px-3">
                 <h3 class="text-xl text-black">Title : Car</h3>
                 <p class="text-xl"></p>
                 <div class="flex justify-between w-full">
@@ -106,21 +108,23 @@
                     <p id="numberOfDiscount" class="text-xl"></p>
                   </div>
                 </div>
-                <div class="card-actions items-center justify-end">
+                <div class="card-actions items-center justify-between">
                   <div class="flex items-center gap-1 mr-3">
                     <div>
                       <i id="star" class="fa-solid fa-star text-yellow-400"></i>
                     </div>
                     <p id="star-rating"></p>
                   </div>
-                  <button
-                    id="add-cart"
-                    href="#"
-                    class="btn btn-info text-black"
-                  >
-                    Add to Cart
-                  </button>
-                  <a href="#" class="btn btn-ghost">Read More...</a>
+                  <div class="flex items-center gap-1">
+                    <button
+                      id="add-cart"
+                      href="#"
+                      class="btn btn-info text-black"
+                    >
+                      Add to Cart
+                    </button>
+                    <a href="#" class="btn btn-ghost">Read More...</a>
+                  </div>
                 </div>
               </div>
             </div>
