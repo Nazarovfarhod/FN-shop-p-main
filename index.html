@@ -26,17 +26,17 @@
 
       <div class="flex gap-16">
         <a
-          class="cursor-pointer hover:text-info active:opacity-50"
+          class="cursor-pointer btn hover:text-info active:opacity-50"
           href="./home.html"
           >Home</a
         >
         <a
-          class="cursor-pointer hover:text-info active:opacity-50"
+          class="cursor-pointer btn hover:text-info active:opacity-50"
           href="./index.html"
           >All Products</a
         >
         <a
-          class="cursor-pointer hover:text-info active:opacity-50"
+          class="cursor-pointer btn hover:text-info active:opacity-50"
           href="./home.html"
           >Contact</a
         >
@@ -84,11 +84,11 @@
       </div>
     </div>
 
-    <div class="container py-5 px-10 mx-auto">
+    <div class="py-5 px-10 mx-auto">
       <h1 class="text-center text-6xl font-semibold text-green-700 mb-24">
         All Products
       </h1>
-      <ul class="w-full flex flex-wrap justify-center gap-10">
+      <ul class="w-full container ml-auto mr-auto flex flex-wrap justify-center gap-10">
         <template>
           <li class="w-[400px]">
             <div class="card w-96 glass cursor-pointer">
@@ -129,69 +129,67 @@
       </ul>
 
       <section id="footer" class="footerColor py-20 px-44">
-        <div class="flex justify-between items-center mb-20">
-          <a class="cursor-pointer ml-20" href="./home.html">
-            <span class="text-4xl text-info font-serif">FN</span>
-            <span class="text-black text-2xl">.Store</span>
-          </a>
-
-          <label class="input input-bordered flex items-center gap-2">
-            <input type="text" class="grow" placeholder="Search" />
-            <svg
-              xmlns="http://www.w3.org/2000/svg"
-              viewBox="0 0 16 16"
-              fill="currentColor"
-              class="w-4 h-4 opacity-70"
-            >
-              <path
-                fill-rule="evenodd"
-                d="M9.965 11.026a5 5 0 1 1 1.06-1.06l2.755 2.754a.75.75 0 1 1-1.06 1.06l-2.755-2.754ZM10.5 7a3.5 3.5 0 1 1-7 0 3.5 3.5 0 0 1 7 0Z"
-                clip-rule="evenodd"
-              />
-            </svg>
-          </label>
-        </div>
-        <div class="flex justify-between">
-          <div>
-            <h3 class="text-2xl text-white font-medium mb-8">Company</h3>
-            <ul class="flex flex-col gap-4 text-white text-base">
-              <li><a href="./home.html">Home</a></li>
-              <li><a href="./index.html">All Products</a></li>
-              <li>About us</li>
-            </ul>
+        <div class="container ml-auto mr-auto">
+          <div class="flex justify-between items-center mb-20">
+            <a class="cursor-pointer ml-20" href="./home.html">
+              <span class="text-4xl text-info font-serif">FN</span>
+              <span class="text-black text-2xl">.Store</span>
+            </a>
+            <label class="input input-bordered flex items-center gap-2">
+              <input type="text" class="grow" placeholder="Search" />
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                viewBox="0 0 16 16"
+                fill="currentColor"
+                class="w-4 h-4 opacity-70"
+              >
+                <path
+                  fill-rule="evenodd"
+                  d="M9.965 11.026a5 5 0 1 1 1.06-1.06l2.755 2.754a.75.75 0 1 1-1.06 1.06l-2.755-2.754ZM10.5 7a3.5 3.5 0 1 1-7 0 3.5 3.5 0 0 1 7 0Z"
+                  clip-rule="evenodd"
+                />
+              </svg>
+            </label>
           </div>
-
-          <div>
-            <h3 class="text-2xl text-white font-medium mb-8">Help</h3>
-            <ul class="flex flex-col gap-4 text-white text-base">
-              <li>FAQ</li>
-              <li>Help</li>
-              <li>Terms</li>
-            </ul>
-          </div>
-
-          <div>
-            <h3 class="text-2xl text-white font-medium mb-8">Social Media</h3>
-            <ul class="flex flex-col gap-4 text-white text-base">
-              <li class="flex items-center gap-3">
-                <i class="fa-brands fa-facebook"></i>Facebook
-              </li>
-              <li class="flex items-center gap-3">
-                <i class="fa-brands fa-tiktok"></i>Tiktok
-              </li>
-              <li class="flex items-center gap-3">
-                <i class="fa-brands fa-instagram"></i>Instagram
-              </li>
-            </ul>
-          </div>
-
-          <div>
-            <h3 class="text-2xl text-white font-medium mb-8">Contact</h3>
-            <ul class="flex flex-col gap-4 text-white text-base">
-              <li>Sukaasih, Kota Tangerang, Banten 15111</li>
-              <li>Phone : +99891 671-67-66</li>
-              <li>Mail : adminvantela@domain.com</li>
-            </ul>
+          <div class="flex justify-between">
+            <div>
+              <h3 class="text-2xl text-white font-medium mb-8">Company</h3>
+              <ul class="flex flex-col gap-4 text-white text-base">
+                <li><a href="./home.html">Home</a></li>
+                <li><a href="./index.html">All Products</a></li>
+                <li>About us</li>
+              </ul>
+            </div>
+            <div>
+              <h3 class="text-2xl text-white font-medium mb-8">Help</h3>
+              <ul class="flex flex-col gap-4 text-white text-base">
+                <li>FAQ</li>
+                <li>Help</li>
+                <li>Terms</li>
+              </ul>
+            </div>
+            <div>
+              <h3 class="text-2xl text-white font-medium mb-8">Social Media</h3>
+              <ul class="flex flex-col gap-4 text-white text-base">
+                <li class="flex items-center gap-3">
+                  <i class="fa-brands fa-facebook"></i>Facebook
+                </li>
+                <li class="flex items-center gap-3">
+                  <i class="fa-brands fa-tiktok"></i>Tiktok
+                </li>
+                <li class="flex items-center gap-3">
+                  <i class="fa-brands fa-instagram"></i>Instagram
+                </li>
+              </ul>
+            </div>
+            <div>
+              <h3 class="text-2xl text-white font-medium mb-8">Contact</h3>
+              <ul class="flex flex-col gap-4 text-white text-base">
+                <li>Sukaasih, Kota Tangerang, Banten 15111</li>
+                <li>Phone : +99891 671-67-66</li>
+                <li>Mail : adminvantela@domain.com</li>
+              </ul>
+            </div>
           </div>
         </div>
       </section>
