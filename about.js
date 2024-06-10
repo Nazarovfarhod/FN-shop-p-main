@@ -13,6 +13,14 @@ const updateUI = (product) => {
   const wariant = document.getElementById("wariant");
   const description = document.getElementById("description");
   const stock = document.getElementById("stock");
+  const com1 = document.querySelector(".com1");
+  const com2 = document.querySelector(".com2");
+  const com3 = document.querySelector(".com3");
+
+  com1.textContent = product.reviews[0].comment;
+  com2.textContent = product.reviews[1].comment;
+  com3.textContent = product.reviews[2].comment;
+
   img1.src = product.images[0];
   img2.src = product.images[1];
   img3.src = product.images[2];
